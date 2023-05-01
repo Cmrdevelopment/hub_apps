@@ -2,7 +2,7 @@ import "./Dashboard.css";
 
 
 const templete = () => {
-    return`
+    return /*html*/ `
     <div id="containerDashboard">
         <ul>
             <li>
