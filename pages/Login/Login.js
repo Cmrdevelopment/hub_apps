@@ -1,4 +1,4 @@
-import "./Footer.css";
+import "./Login.css";
 
 
 const templete = () => {
@@ -13,5 +13,5 @@ const addListeners = () => {
 };
 
 export const printTemplates = () => {
-    document.querySelector("footer").innerHTML = templete
+    document.querySelector("main").innerHTML = templete()
 } 
