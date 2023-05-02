@@ -1,11 +1,10 @@
 header {
-    background-color: #d1d1e9;
+    background-color: #e3f6f5;
     height: 12vh;
     width: 100vw;
-    border: 2px solid red;
     display: flex;
-    justify-content: space-between;
-    padding: 0 12rem;
+    justify-content: space-around;
+    position: fixed;
 
 }
 
@@ -14,10 +13,18 @@ header > div {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+
 }
 
-header > div  img {
-    height: 72px; 
+header > div > img {
+    height: 72px;
+    
+}
+
+
+header > div > img:hover {
+    height: 7.9vh;
+    transition: 1s ease-out;
 }
 
 header > div > h1:hover {
@@ -30,16 +37,68 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    
 }
 
-nav img {
-    height: 29px; 
+header > nav > img {
+    height: 36%; 
+}
+
+nav > .navDashboard, nav > .navLogout {
+    cursor: pointer;
+}
+
+nav > .navDashboard:hover {
+    height: 48px;
+    transition: 1s ease-out;
+}
+
+nav > .navLogout:hover {
+    height: 48px;
+    transition: 1s ease-out;
 }
 
 
 
+/* css para el botón de modo claro a modo oscuro  */
+input[type="checkbox"] {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background-color: #434343;
+    appearance: none;  
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+} 
 
+input[type="checkbox"]:checked {
+    background-color: #04ac2e;
+}
 
+input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: 0.7s ease;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: translateX(20px);
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* hasta aquí css para el botón de modo claro a modo oscuro  */
 
 
 

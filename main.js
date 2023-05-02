@@ -5,6 +5,7 @@ import { printTemplates as Dashboard } from './pages/Dashboard/Dashboard';
 import { printTemplates as HangMan} from './pages/HangMan/HangMan';
 import { printTemplates as Login} from './pages/Login/Login';
 import { printTemplates as QuizPlay} from './pages/QuizPlay/QuizPlay';
+import { printTemplates as printFooter} from './components/Footer/Footer';
 
 
 const app = document.querySelector("#app");
@@ -14,6 +15,7 @@ const footer = document.createElement("footer");
 
 app.append(header, main, footer);
 printHeader()
+printFooter()
 
 export const initControler = (route) => {
 
@@ -43,10 +45,3 @@ export const initControler = (route) => {
 };
 
 initControler();
-
-
-// función para pasar de modo claro a modo oscuro
-function enableDarkMode() {
-    let main_body = document.body;
-    main_body.classList.toggle("dark-mode");
-}
