@@ -1,7 +1,3 @@
-.figureDashboard img{
-    width:25rem;
-}
-
 #containerDashboard {
     width: 100vw;
     display: flex;
@@ -20,7 +16,7 @@
 }
 
 .figureDashboard {
-    width: 400px;
+    width: 350px;
     height: 350px;
     display: flex;
     flex-direction: column;
@@ -41,4 +37,15 @@
 h2 {
     margin: 1rem;
 font-size: 2.5rem;
+}
+
+h2:hover {
+    font-size: 2.7rem;
+    transition: 0.5s;
+}
+
+.figureDashboard img:hover {
+-webkit-box-shadow: 1px -1px 27px 0px rgba(3, 239, 231, 0.9);
+-moz-box-shadow: 1px -1px 27px 0px rgba(3, 239, 231, 0.9);
+box-shadow: 1px -1px 27px 0px rgba(3, 239, 231, 0.9);
 }
