@@ -1,3 +1,4 @@
+import { initControler } from "../../utils/route";
 import "./Dashboard.css";
 
 
@@ -7,8 +8,9 @@ const templete = () => {
         <ul>
             <li>
                 <figure id="figurePokemon" class="figureDashboard">
-                <img src="https://res.cloudinary.com/dwdznuzaz/image/upload/v1682955920/pokemon-primera-generacion.1682856451.4993_w1qjl1.webp" alt="navegación a imagenes de pokemon">
+                <img src="https://res.cloudinary.com/dwdznuzaz/image/upload/v1682955920/pokemon-primera-generacion.1682856451.4993_w1qjl1.webp" alt="navegación a imagenes de pokemon" id="imgPokemon"> 
                 <h2>Pokemon</h2>
+                
                 </figure>
             </li>
             <li>
@@ -29,9 +31,14 @@ const templete = () => {
 };
 
 const addListeners = () => {
+    const imgPokemon = document.getElementById("imgPokemon");
+    imgPokemon.addEventListener("click", () => {
+      initControler("Pokemon");
+    });
 
-};
+  };
 
 export const printTemplates = () => {
     document.querySelector("main").innerHTML = templete();
+    addListeners()
 }
