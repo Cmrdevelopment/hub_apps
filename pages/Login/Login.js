@@ -1,24 +1,24 @@
-import { initControler } from "../../main";
+import { initControler } from "../../utils/route";
 import "./Login.css";
 
 const templete = () => {
     return /*html*/ `
-    <input type="text" name="" id="">
-    <button id="buttonlogin">Login</button>
+    <div class="loginContainer">
+        <p>Bienvenido</p>
+        <input type="text" placeholder="Usuario" id="">
+        <button id="buttonLogin">Acceder</button>
+    </div>
     `
 };
 
-
 const addListeners = () => {
-    const buttonlogin = document.querySelector("#buttonlogin");
-    buttonlogin.addEventListener("click", () => {
+    const buttonLogin = document.querySelector("#buttonLogin");
+    buttonLogin.addEventListener("click", () => {
         const inputLogin = document.querySelector("input");
         localStorage.setItem("user", inputLogin.value);
-        if (localStorage.getItem("user")) document.querySelector("nav").style.display = "block";
+        if (localStorage.getItem("user")) document.querySelector("nav").style.display = "flex";
         initControler();
-
     })
-
 };
 
 export const printTemplates = () => {

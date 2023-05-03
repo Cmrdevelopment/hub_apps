@@ -1,4 +1,4 @@
-import { initControler } from "../../main";
+import { initControler } from "../../utils/route";
 import "./Header.css";
 
 
