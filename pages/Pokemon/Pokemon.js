@@ -6,9 +6,11 @@ let dataServicePokemon
 const templete = () => /*html*/ `
     <div id="pokemon">
         <p>Buscar Pokemon</p>
-        <input type="text" id="inputPokemon"/>
+        <input type="text" placeholder="Pikachu" id="inputPokemon"/>
     <div class="galleryPokemon"></div>  
     </div>`;
+
+
 
 const dataService = async () => {
     const getData = await dataPokemon();
@@ -23,6 +25,9 @@ const createAndPrintFigure =(data)=> {
             <figure class="figurePokemon">
                 <img src=${pokemon.image} alt=${pokemon.name}/>
                 <h2>${pokemon.name}</h2>
+                <p>Id: ${pokemon.id}</p>
+                <p>Peso: ${pokemon.weight}</p>
+                
             </figure>
         `;
         document.querySelector(".galleryPokemon").innerHTML += templatefigure;

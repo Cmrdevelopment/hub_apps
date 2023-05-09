@@ -15,14 +15,14 @@ const templete = () => {
             </li>
             <li>
                 <figure id="figureHangMan" class="figureDashboard">
-                <img src="https://res.cloudinary.com/dwdznuzaz/image/upload/v1682956168/hangmangame_zz0dgc.jpg" alt="navegación al juego del ahorcado">
+                <img src="https://res.cloudinary.com/dwdznuzaz/image/upload/v1682956168/hangmangame_zz0dgc.jpg" alt="navegación al juego del ahorcado" id="imgHangMan">
                 <h2>HangMan</h2>
                 </figure>
             </li>
             <li>
-                <figure id="figureQuizPlay" class="figureDashboard">
-                <img src="https://res.cloudinary.com/dwdznuzaz/image/upload/v1682956366/Aplicaciones-de-juegos-de-preguntas-para-aprovechar-el-tiempo-aprendiendo_s9gbhr.webp" alt="navegación al juego de preguntas y respuestas">
-                <h2>QuizPlay</h2>
+                <figure id="figureWacka" class="figureDashboard">
+                <img src="https://res.cloudinary.com/dwdznuzaz/image/upload/v1683652261/Topo_zhtscf.png" alt="navegación del juego Wacka" id="imgWacka">
+                <h2>Wacka</h2>
                 </figure>
             </li>
         </ul>
@@ -35,8 +35,15 @@ const addListeners = () => {
     imgPokemon.addEventListener("click", () => {
         initControler("Pokemon");
     });
-
-};
+    const imgWacka = document.querySelector("#imgWacka");
+    imgWacka.addEventListener("click", () => {
+        initControler("Wacka");
+    });
+    const imgHangMan = document.querySelector("#imgHangMan");
+    imgHangMan.addEventListener("click", () => {
+        initControler("HangMan");
+    });
+}
 
 export const printTemplates = () => {
     document.querySelector("main").innerHTML = templete();

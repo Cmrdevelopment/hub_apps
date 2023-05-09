@@ -3,7 +3,7 @@ import { printTemplates as Pokemon} from '../pages/Pokemon/Pokemon';
 import { printTemplates as Dashboard } from '../pages/Dashboard/Dashboard';
 import { printTemplates as HangMan} from '../pages/HangMan/HangMan';
 import { printTemplates as Login} from '../pages/Login/Login';
-import { printTemplates as QuizPlay} from '../pages/QuizPlay/QuizPlay';
+import { printTemplates as Wacka} from '../pages/Wacka/Wacka';
 
 
 export const initControler = (route) => {
@@ -18,8 +18,8 @@ export const initControler = (route) => {
         case "HangMan":
             HangMan();
             break;
-        case "QuizPlay":
-            QuizPlay();
+        case "Wacka":
+            Wacka();
             break;
         case "Login":
             Login();

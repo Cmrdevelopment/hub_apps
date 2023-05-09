@@ -11,9 +11,12 @@ export const dataPokemon = async () => {
 }
 
 const dataMap = (data) => {
+    console.log(data);
     const filterData = data.map((pokemon) =>({
         name: pokemon.name,
         image: pokemon.sprites.other.dream_world.front_default,
+        id: pokemon.id,
+        weight: pokemon.weight
     }));
     return filterData;
 };
