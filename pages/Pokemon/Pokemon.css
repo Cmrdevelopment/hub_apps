@@ -27,7 +27,15 @@ figure > h2 {
     border-radius:5px;
     border-width: 3px;
     height: 29px;
-    width: 140px;
+    width: 160px;
+}
+
+#pokemon {
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
 }
 
 
