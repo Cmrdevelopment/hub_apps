@@ -33,10 +33,10 @@ const templete = () => {
 const addListeners = () => {
     const imgPokemon = document.getElementById("imgPokemon");
     imgPokemon.addEventListener("click", () => {
-      initControler("Pokemon");
+        initControler("Pokemon");
     });
 
-  };
+};
 
 export const printTemplates = () => {
     document.querySelector("main").innerHTML = templete();

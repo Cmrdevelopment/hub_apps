@@ -18,6 +18,10 @@
 main {
     background-color: var(--background-color);
     min-height: 91vh;
-    display: flex;
-    justify-content: center;
+    padding-top: 25vh;
 }
+
+p {
+    font-weight: 500;
+}
+
