@@ -1,3 +1,4 @@
+import { enableDarkMode } from "../../utils/changeColor";
 import { initControler } from "../../utils/route";
 import "./Header.css";
 
@@ -31,6 +32,6 @@ const addListeners = () => {
 
 export const printTemplates = () => {
     document.querySelector("header").innerHTML = templete()
-    addListeners() 
+    addListeners()
 } 
 

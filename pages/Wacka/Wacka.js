@@ -1,35 +1,7 @@
 import "./Wacka.css";
 import { ramdomTime } from "../../utils/randomTime";
+import { templete } from "../../components/Wacka/wackaTemplate";
 
-//? ------------------ TEMPLATE GENERAL ---------------------------
-
-const templete = () => /*html*/`
-    <div class="interface">
-        <h1>Wacka</h1>
-        <span class="score">0</span>
-        <button id="startGame">Empezar</button>
-    </div>
-    <div class="game">
-        <div class="hole hole1">
-            <div clase="mole"></div>
-        </div>
-        <div class="hole hole2">
-            <div clase="mole"></div>
-        </div>
-        <div class="hole hole3">
-            <div clase="mole"></div>
-        </div>
-        <div class="hole hole4">
-            <div clase="mole"></div>
-        </div>
-        <div class="hole hole5">
-            <div clase="mole"></div>
-        </div>
-        <div class="hole hole6">
-            <div clase="mole"></div>
-        </div>
-    </div>
-`;
 
 //? ------------------ VARIABLES GLOBALES ---------------------------
 
