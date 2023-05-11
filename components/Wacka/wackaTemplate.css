@@ -55,9 +55,10 @@
 .hole.up .mole{
     top: 0;
 }
+
 @media screen and ( max-width: 600px){
     .mole {
-        background-size: 180%;
+        background-size: 145%;
     }
     .game {
         height: 400px;

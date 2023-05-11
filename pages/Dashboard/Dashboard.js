@@ -1,9 +1,13 @@
+import { helloUser } from "../../utils/hello";
 import { initControler } from "../../utils/route";
 import "./Dashboard.css";
 
 
 const templete = () => {
     return /*html*/ `
+    <div class="saludo">
+    <h1>Hola ${helloUser()}, ¡a jugar!</h1>
+    </div>
     <div id="containerDashboard">
         <ul>
             <li>

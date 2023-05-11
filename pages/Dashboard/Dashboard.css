@@ -49,3 +49,7 @@ ul > h2:hover {
 -moz-box-shadow: 1px -1px 27px 0px rgba(3, 239, 231, 0.9);
 box-shadow: 1px -1px 27px 0px rgba(3, 239, 231, 0.9);
 }
+
+.saludo {
+    text-align: center;
+}
