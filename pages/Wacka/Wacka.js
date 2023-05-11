@@ -47,15 +47,16 @@ const showMole = () => {
 
 //!--> Función que arranca el juego
 const startGame = () => {
-
+    
     timeUp = false;
     score = 0;
+    document.querySelector(".score").textContent = score;
+    console.log(score)
     showMole();
-
     setTimeout(() => {
-
         timeUp = true;
-    }, 15000);
+        score = 0;
+    }, 5000);
 };
 
 //! --> Función que se ejecuta al pulsar el topo : suma puntuación y borra la clase al padre del evento
