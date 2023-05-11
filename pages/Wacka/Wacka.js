@@ -56,7 +56,7 @@ const startGame = () => {
     setTimeout(() => {
         timeUp = true;
         score = 0;
-    }, 15000);
+    }, 12000);
 };
 
 //! --> Función que se ejecuta al pulsar el topo : suma puntuación y borra la clase al padre del evento

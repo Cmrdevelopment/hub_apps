@@ -57,7 +57,7 @@
 }
 @media screen and ( max-width: 600px){
     .mole {
-        background-size: 135%;
+        background-size: 180%;
     }
     .game {
         height: 400px;
