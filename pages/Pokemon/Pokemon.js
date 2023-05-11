@@ -38,8 +38,8 @@ const createAndPrintFigure =(data)=> {
                 <img src=${pokemon.image} alt=${pokemon.name} class="imgPokemon"/>
                 <h2>${pokemon.name}</h2>
                 <p>Id: ${pokemon.id}</p>
-                <p>Peso: ${pokemon.weight}</p>
-                <p>Altura: ${pokemon.height}</p>
+                <p>Peso: ${pokemon.weight} kg</p>
+                <p>Altura: ${pokemon.height} cm</p>
                 <p>Tipo: ${pokemon.type[0].type.name}</p>
                 
             </figure>
