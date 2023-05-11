@@ -7,8 +7,8 @@
 }
 
 .game {
-    width: 600px;
-    height: 400px;
+    width: 60vw;
+    height: 50vh;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -43,14 +43,34 @@
 
 .mole {
     background: url("https://res.cloudinary.com/dwdznuzaz/image/upload/v1683726544/lindo-pequeno-topo-caricatura-sentado_188253-4210-removebg-preview_ur8crq_1_quhoty.png") bottom center no-repeat;
-    background-size: 100%;
+    background-size: 60%;
     position: absolute;
     top: 100%;
     width: 100%;
     height: 100%;
     transition: all 0.4s;
+    z-index: 4;
 }
 
 .hole.up .mole{
     top: 0;
+}
+@media screen and ( max-width: 600px){
+    .mole {
+        background-size: 100%;
+    }
+    .game {
+        height: 400px;
+        margin-top: 3rem;
+    }
+    .hole {
+        height: 160px;
+        width: 50px;
+    }
+    .hole:after {
+        height: 80px;
+    }
+    .interface {
+        margin-top: 2rem;
+    }
 }

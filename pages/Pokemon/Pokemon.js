@@ -40,7 +40,7 @@ const createAndPrintFigure =(data)=> {
                 <p>Id: ${pokemon.id}</p>
                 <p>Peso: ${pokemon.weight}</p>
                 <p>Altura: ${pokemon.height}</p>
-                <p>Tipo: ${pokemon.types}</p>
+                <p>Tipo: ${pokemon.type[0].type.name}</p>
                 
             </figure>
         `;

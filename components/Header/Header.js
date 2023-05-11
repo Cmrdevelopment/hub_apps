@@ -5,7 +5,7 @@ import "./Header.css";
 
 const templete = () => {
     return /*html*/ `
-    <div>
+    <div class="divHeader">
         <img src="https://res.cloudinary.com/dwdznuzaz/image/upload/v1683025870/Games-Center-sin_fondo_f9z9bu.png" alt="icono de la web"/>
         <h1>Hub Games</h1>
     </div>

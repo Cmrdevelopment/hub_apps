@@ -180,6 +180,12 @@ figure.water {
 }
 
 
+@media screen and ( max-width: 600px){
+    #pokemon {
+        margin-top: 2rem;
+    }
+}
+
 
 
 
