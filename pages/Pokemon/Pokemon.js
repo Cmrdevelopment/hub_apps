@@ -6,11 +6,11 @@ import "./Pokemon.css";
 
 //! Creamos una variable local para que tengan acceso todas las funciones con los datos del service
 
-let dataServicePokemon
+let dataServicePokemon;
 const templete = () => /*html*/ `
     <div id="pokemon">
         <p>Buscar Pokemon</p>
-        <input type="text" placeholder="Pikachu" id="inputPokemon"/>
+        <input type="text" placeholder="  Pikachu" id="inputPokemon"/>
     <div class="galleryPokemon"></div>
     <div class="spinner"></div>  
     </div>`;
@@ -20,20 +20,20 @@ const templete = () => /*html*/ `
 //! en el data service llamamos al servicio y creamos las figure que luego se pintaran
 
 const dataService = async () => {
-    document.querySelector(".spinner").innerHTML = Loading();
-    const getData = await dataPokemon();
-    dataServicePokemon = getData
-    document.querySelector(".spinner").innerHTML = "";
-    createAndPrintFigure(dataServicePokemon)
+  document.querySelector(".spinner").innerHTML = Loading();
+  const getData = await dataPokemon();
+  dataServicePokemon = getData;
+  document.querySelector(".spinner").innerHTML = "";
+  createAndPrintFigure(dataServicePokemon);
 };
 
 //? -------> FUNCION GENERAL QUE NOS VA A SERVIR PARA PINTAR TANTO LOS POKEMON DEL FILTER COMO LOS DE LA DATA GENERAL
 
-const createAndPrintFigure =(data)=> {
-    document.querySelector(".galleryPokemon").innerHTML = "";
-    data.map((pokemon)=>{
-        const classCustumType =`"figurePokemon ${pokemon.type[0].type.name}"`
-        const templatefigure = `
+const createAndPrintFigure = (data) => {
+  document.querySelector(".galleryPokemon").innerHTML = "";
+  data.map((pokemon) => {
+    const classCustumType = `"figurePokemon ${pokemon.type[0].type.name}"`;
+    const templatefigure = `
             <figure class=${classCustumType}>
                 <img src=${pokemon.image} alt=${pokemon.name} class="imgPokemon"/>
                 <h2>${pokemon.name}</h2>
@@ -44,29 +44,29 @@ const createAndPrintFigure =(data)=> {
                 
             </figure>
         `;
-        document.querySelector(".galleryPokemon").innerHTML += templatefigure;
-    });
-}
+    document.querySelector(".galleryPokemon").innerHTML += templatefigure;
+  });
+};
 
 //?--------------- EVENTOS DE LOS ELEMENTOS HTML -------------------
 //! --> Añadimos los escuchadores de eventos
 
 const addListeners = () => {
-    const inputPokemon = document.getElementById("inputPokemon");
-    inputPokemon.addEventListener("input", (e)=> {
-        filterPokemon (e.target.value)
-    })
+  const inputPokemon = document.getElementById("inputPokemon");
+  inputPokemon.addEventListener("input", (e) => {
+    filterPokemon(e.target.value);
+  });
 };
 
-const filterPokemon = (valueInput)=> {
-    const filterData = dataServicePokemon.filter((pokemon) => 
+const filterPokemon = (valueInput) => {
+  const filterData = dataServicePokemon.filter((pokemon) =>
     pokemon.name.toLowerCase().includes(valueInput.toLowerCase())
-    );
-    createAndPrintFigure(filterData)
-}
+  );
+  createAndPrintFigure(filterData);
+};
 
 export const printTemplates = () => {
-    document.querySelector("main").innerHTML = templete();
-    dataService()
-    addListeners()
-} 
+  document.querySelector("main").innerHTML = templete();
+  dataService();
+  addListeners();
+};

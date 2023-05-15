@@ -2,11 +2,10 @@ import { helloUser } from "../../utils/hello";
 import { initControler } from "../../utils/route";
 import "./Dashboard.css";
 
-
 const templete = () => {
-    return /*html*/ `
+  return /*html*/ `
     <div class="saludo">
-    <h1>Hola ${helloUser()}, ¡a jugar!</h1>
+    <h1>Hola ${helloUser()}, ¡vamos a divertirnos!</h1>
     </div>
     <div id="containerDashboard">
         <ul>
@@ -31,25 +30,25 @@ const templete = () => {
             </li>
         </ul>
     </div>
-`
+`;
 };
 
 const addListeners = () => {
-    const imgPokemon = document.getElementById("imgPokemon");
-    imgPokemon.addEventListener("click", () => {
-        initControler("Pokemon");
-    });
-    const imgWacka = document.querySelector("#imgWacka");
-    imgWacka.addEventListener("click", () => {
-        initControler("Wacka");
-    });
-    const imgHangMan = document.querySelector("#imgHangMan");
-    imgHangMan.addEventListener("click", () => {
-        initControler("HangMan");
-    });
-}
+  const imgPokemon = document.getElementById("imgPokemon");
+  imgPokemon.addEventListener("click", () => {
+    initControler("Pokemon");
+  });
+  const imgWacka = document.querySelector("#imgWacka");
+  imgWacka.addEventListener("click", () => {
+    initControler("Wacka");
+  });
+  const imgHangMan = document.querySelector("#imgHangMan");
+  imgHangMan.addEventListener("click", () => {
+    initControler("HangMan");
+  });
+};
 
 export const printTemplates = () => {
-    document.querySelector("main").innerHTML = templete();
-    addListeners()
-}
+  document.querySelector("main").innerHTML = templete();
+  addListeners();
+};

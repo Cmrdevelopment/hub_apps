@@ -1,55 +1,56 @@
 #containerDashboard {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #containerDashboard ul {
-    width: 100vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: none;
-    padding-top: 14vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  padding-top: 5vh;
 }
 
 .figureDashboard {
-    width: 350px;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .figureDashboard img {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-    border-radius: 10%;
-    -webkit-box-shadow: 7px 8px 27px 0px rgba(0, 0, 0, 0.42);
-    -moz-box-shadow: 7px 8px 27px 0px rgba(0, 0, 0, 0.42);
-    box-shadow: 7px 8px 27px 0px rgba(0, 0, 0, 0.42);
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10%;
+  -webkit-box-shadow: 7px 8px 27px 0px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 7px 8px 27px 0px rgba(0, 0, 0, 0.42);
+  box-shadow: 7px 8px 27px 0px rgba(0, 0, 0, 0.42);
 }
 
 h2 {
-    margin: 2px;
-font-size: 2.5rem;
+  margin: 2px;
+  font-size: 2.5rem;
 }
 
 ul > h2:hover {
-    font-size: 2.7rem;
-    transition: 0.5s;
+  font-size: 2.7rem;
+  transition: 0.5s;
 }
 
 .figureDashboard img:hover {
--webkit-box-shadow: 1px -1px 27px 0px rgba(3, 239, 231, 0.9);
--moz-box-shadow: 1px -1px 27px 0px rgba(3, 239, 231, 0.9);
-box-shadow: 1px -1px 27px 0px rgba(3, 239, 231, 0.9);
+  -webkit-box-shadow: 1px -1px 27px 0px rgba(3, 239, 231, 0.9);
+  -moz-box-shadow: 1px -1px 27px 0px rgba(3, 239, 231, 0.9);
+  box-shadow: 1px -1px 27px 0px rgba(3, 239, 231, 0.9);
 }
 
 .saludo {
-    text-align: center;
+  text-align: center;
+  margin-top: 48px;
 }
