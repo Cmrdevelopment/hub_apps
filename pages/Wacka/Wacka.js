@@ -55,7 +55,7 @@ const startGame = () => {
     timeUp = true;
     document.querySelector("#modalPuntos").style.display = "block";
     document.querySelector(".puntos").innerHTML = `score: ${score}`;
-  }, 3000);
+  }, 12000);
 };
 
 //! --> Función que se ejecuta al pulsar el topo : suma puntuación y borra la clase al padre del evento
